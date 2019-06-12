@@ -126,7 +126,7 @@ picture {
   height: 4px;
   border-radius: 2px;
 
-  background-color: #dc4d4d;
+  background-color: rgba(225, 225, 225, 0.9);
 }
 .navigation__list {
   display: none;
