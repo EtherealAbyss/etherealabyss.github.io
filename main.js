@@ -1,7 +1,24 @@
 navFixer();
 menuToggler();
 backgroundChanger();
-slider();
+const photoSlider = {};
+photoSlider.container = document.querySelector(".photoset");
+photoSlider.carousel = document.querySelector(".photoset__carousel");
+photoSlider.cards = document.querySelectorAll(".photoset__photo");
+photoSlider.leftButton = 'photoset__btn--left';
+photoSlider.rightButton = 'photoset__btn--right';
+photoSlider.shownCards = 3;
+const reviewsSlider = {};
+reviewsSlider.container = document.querySelector(".reviews");
+reviewsSlider.carousel = document.querySelector(".reviews__list");
+reviewsSlider.cards = document.querySelectorAll(".reviews__item");
+reviewsSlider.leftButton = 'reviews__btn--left';
+reviewsSlider.rightButton = 'reviews__btn--right';
+reviewsSlider.shownCards = 1;
+
+slider(photoSlider);
+slider(reviewsSlider);
+
 photoOpener();
 form();
 
@@ -65,12 +82,14 @@ function backgroundChanger() {
   });
 };
 
-function slider() {
-  const container = document.querySelector(".photoset");
-  const carousel = document.querySelector(".photoset__carousel");
-  const cards = carousel.querySelectorAll(".photoset__photo");
-  const leftButton = 'photoset__btn--left';
-  const rightButton = 'photoset__btn--right';
+
+function slider(obj) {
+  const container = obj.container;
+  const carousel = obj.carousel;
+  const cards = obj.cards;
+  const leftButton = obj.leftButton;
+  const rightButton = obj.rightButton;
+  const shownCards = obj.shownCards;
 
   let cardWidth;
   let offset = 0;
@@ -86,7 +105,7 @@ function slider() {
       direction = 1;
     }
     else if (event.target.classList.contains(rightButton) && 
-    offset > (-cardWidth * (cards.length - 3))) {
+    offset > (-cardWidth * (cards.length - shownCards))) {
       direction = -1;
     }
     offset += (cardWidth * direction - badOffset) ;
