@@ -7,6 +7,9 @@ html {
 button::-moz-focus-inner {
   border: 0;
 }
+picture {
+  border-color: transparent;
+}
 .page {
   position: relative;
 
@@ -567,7 +570,7 @@ button::-moz-focus-inner {
   min-height: 100%;
 }
 .photoset__photo {
-  background: black;
+  background: transparent;
   width: 33.33%;
   height: 200px;
   display: inline-flex;
