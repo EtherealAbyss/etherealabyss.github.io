@@ -126,7 +126,7 @@ picture {
   height: 4px;
   border-radius: 2px;
 
-  background-color: #fff;
+  background-color: #dc4d4d;
 }
 .navigation__list {
   display: none;
@@ -823,7 +823,7 @@ picture {
   position: relative;
 }
 .contacts__text {
-  transition: 0.7s;
+  transition: 0.3s;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -852,7 +852,7 @@ picture {
   transform: translateX(0);
 }
 .contacts__btn {
-  transition: 0.7s;
+  transition: 0.3s;
   cursor: pointer;
   content: "";
   display: block;
