@@ -21,6 +21,7 @@ slider(reviewsSlider);
 
 photoOpener();
 form();
+contactsOpener();
 
 function navFixer() {
   const navigation = document.querySelector('.navigation');
@@ -307,5 +308,14 @@ function form() {
       feedback.innerText = 'Запрос не удалось отправить :с';
     };
       // получить результат из this.responseText или this.responseXML
+  });
+};
+
+function contactsOpener() {
+  const contacts = document.querySelector('.contacts__text');
+  const contactsButton = document.querySelector('.contacts__btn');
+  contactsButton.addEventListener('click', () => {
+    contactsButton.classList.toggle('contacts__btn--active');
+    contacts.classList.toggle('contacts__text--active');
   });
 };
