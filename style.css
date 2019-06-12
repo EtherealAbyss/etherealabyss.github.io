@@ -661,6 +661,7 @@ button::-moz-focus-inner {
   padding-bottom: 150px;
   margin-bottom: 85px;
   background-color: #f5f5f5;
+  overflow: hidden;
 }
 .reviews__list {
   transition: all 1s ease;
