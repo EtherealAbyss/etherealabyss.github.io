@@ -65,7 +65,7 @@ button::-moz-focus-inner {
 }
 .navigation__logo {
   display: block;
-
+  
   transition: 0.3s;
 
   color: #fff;
@@ -92,6 +92,7 @@ button::-moz-focus-inner {
 }
 @media (min-width: 900px) {
   .navigation__logo {
+    opacity: 1;
     top: 90px;
     left: 40px;
     font-size: 36px;
