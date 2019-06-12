@@ -87,12 +87,13 @@ button::-moz-focus-inner {
 @media (min-width: 900px) {
   .navigation--fixed .navigation__logo {
     color: #dc4d4d;
+    opacity: 1;
     background-color: transparent;
   }
 }
 @media (min-width: 900px) {
   .navigation__logo {
-    opacity: 1;
+    
     top: 90px;
     left: 40px;
     font-size: 36px;
