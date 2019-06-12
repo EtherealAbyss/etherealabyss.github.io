@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отель Малина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  </head>
+  <body class="page">
+    <header class="page__navigation navigation">
+      <a class="navigation__logo">Малина</a>
+      <button class="navigation__menu-btn">
+        <span class="navigation__burger"></span>
+        <span class="navigation__burger"></span>
+        <span class="navigation__burger"></span>
+      </button>
+      <nav class="navigation__list">
+        <a class="navigation__link" href="#">Главная</a>
+        <a class="navigation__link" href="#about">О нас</a>
+        <a class="navigation__link" href="#rooms">Номера</a>
+        <a class="navigation__link" href="#photo">Контакты</a>
+        <button class="navigation__btn">Забронировать</button>
+      </nav>
+    </header>
+    <main class="page__main main">
+      <section class="main__widget widget">
+        <div class="widget__background img-1"></div>
+        <div class="widget__background img-2"></div>
+        <h1 class="page__title">Отель "Малина"</h1>
+        <p class="page__description">Уютное место для отдыха с комфортом</p>
+        <form name="phone-form" class="widget__form">
+          <label class="widget__label" for="phone-number">
+            Ваш телефон:
+          </label>
+          <input class="widget__input" id="phone-number" name="phone-number" type="tel" placeholder="+7 (xxx) xxx xx xx">
+          <button class="widget__btn">забронировать номер</button>
+        </form>
+      </section>
+      <section class="main__advantages advantages" id="about">
+        <h2 class="advantages__title">Почему мы</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--comfort">
+              Домашний уют
+          </li>
+          <li class="advantages__item advantages__item--transfer">
+              Трансфер
+          </li>
+          <li class="advantages__item advantages__item--wi-fi">
+              WI-FI
+          </li>
+          <li class="advantages__item advantages__item--price">
+              Цена
+          </li>
+          <li class="advantages__item advantages__item--quality">
+              Качество
+          </li>
+        </ul>
+        <ul class="advantages__rooms rooms" id="rooms">
+          <li class="rooms__item">
+            <div class="rooms__picture">
+              <picture>
+                <source srcset="/images/2.jpg" meta="min-width: 900px">
+                <img class="rooms__img" src="/images/2m.jpg" alt="Комфортный номер">
+              </picture>
+            </div>
+              <div class="rooms__text-container">
+              <h3 class="rooms__title">
+                Комфортные номера бла бла бла
+              </h3>
+              <p class="rooms_description">
+                Во всех номерах установлены комфортабельные кровати с мастрацами "АСКОНА", есть бесплатный wi-fi, телевидение
+              </p>
+            </div>
+          </li>
+          <li class="rooms__item">
+            <div class="rooms__picture">
+              <picture>
+                <source srcset="/images/5.jpg" meta="min-width: 900px">
+                <img class="rooms__img" src="/images/5m.jpg" alt="Комфортный номер">
+              </picture>
+            </div>
+            <div class="rooms__text-container">
+              <h3 class="rooms__title">
+                Все необходимые удобства
+              </h3>
+              <p class="rooms_description">
+                Туалет, душ есть. Что ещё надо?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main__photo-album photo-album" id="photo">
+        <h2 class="photo-album__title">Фотоальбом</h2>
+        <div class="photoset">
+          <ul class="photoset__carousel">
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/1m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/1s.jpg" data-original="/images/1.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/2m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/2s.jpg" data-original="/images/2.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/3m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/3s.jpg" data-original="/images/3.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/4m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/4s.jpg" data-original="/images/4.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/5m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/5s.jpg" data-original="/images/5.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/6m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/6s.jpg" data-original="/images/6.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/7m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/7s.jpg" data-original="/images/7.jpg" alt="">
+              </picture>
+            </li>
+            <li class="photoset__photo">
+              <picture>
+                <source srcset="/images/8m.jpg" media="(min-width: 900px)">
+                <img class="photoset__img" src="/images/8s.jpg" data-original="/images/8.jpg" alt="">
+              </picture>
+            </li>
+          </ul>
+          <button class="photoset__btn photoset__btn--left"></button>
+          <button class="photoset__btn photoset__btn--right"></button>
+        </div>
+        <div class="photo-album__opened opened">
+          <button class="opened__btn--left"></button>
+          <button class="opened__btn--right"></button>
+        </div>
+      </section>
+      <article class="main__reviews reviews">
+        <ol class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__container">
+              <p class="reviews__author">Сергей</p>
+              <p class="reviews__from">Москва</p>
+            </div>
+            <p class="reviews__text">
+              Сначала думал, что не понравится отель, но номера очень уютные, ремонт, видимо новый. Всё на уровне. Буду сюда бронировать каждый раз.
+            </p>
+          </li>
+        </ol>
+      </article>
+    </main>
+    <footer class="page__footer footer">
+      <a class="to-top" href="#">Наверх</a>
+    </footer>
+    <div class="page__overlay"></div>
+    <form class="page__main-form main-form" name="main-form" method="POST" action="https://ethabyssserver.herokuapp.com/">
+      <h3 class="main-form__title">Бронирование</h3>
+      <div class="main-form__container">
+        <input class="main-form__name" type="text" name="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" data-validated="false">
+        <input class="main-form__phone" type="tel" name="phone" placeholder="Ваш телефон" data-validated="false">
+      </div>
+      <textarea class="main-form__comment" name="comment" placeholder="Комментарий"></textarea>
+      <input class="main-form__submit" type="submit" value="ОТПРАВИТЬ">
+    </form>
+      <div class="page__server-feedback"></div>
+    <script src="/main.js"></script>
+  </body>
+</html>
