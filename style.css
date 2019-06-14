@@ -456,27 +456,27 @@ picture {
 .advantages__item::before {
   content: "";
   display: block;
-  width: 100px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 15px;
 
   background-color: red;
 }
 .advantages__item--comfort::before {
-  background: url("/images/comfort.png") no-repeat center;
+  background: url("/images/comfort.svg") no-repeat center;
   background-size: contain;
 }
 .advantages__item--transfer::before {
-  background: url("/images/transfer.png") no-repeat center;
+  background: url("/images/transfer.svg") no-repeat center;
 }
 .advantages__item--wi-fi::before {
-  background: url("/images/wi-fi.png") no-repeat center;
+  background: url("/images/wifi.svg") no-repeat center;
 }
 .advantages__item--price::before {
-  background: url("/images/price.png") no-repeat center;
+  background: url("/images/price.svg") no-repeat center;
 }
 .advantages__item--quality::before {
-  background: url("/images/quality.png") no-repeat center;
+  background: url("/images/quality.svg") no-repeat center;
 }
 .rooms {
   padding: 0;
